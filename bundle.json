@@ -1,0 +1,11 @@
+{
+    "content": {
+        "version": "1.0.0",
+        "type": "node"
+    },
+    "modules": {
+        "default": {
+            "source": "lib/constant.js"
+        }
+    }
+}

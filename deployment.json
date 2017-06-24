@@ -1,0 +1,8 @@
+{
+    "general":{
+        "exclusions" : {
+            "fileMasks": [ "package*.json", ".npmignore", "*.md", "LICENSE" ],
+            "dirMasks"  : [ "tests", "node_modules" ]
+        }
+    }
+}

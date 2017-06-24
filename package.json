@@ -1,0 +1,22 @@
+{
+  "name": "constant.js",
+  "version": "1.0.0",
+  "description": "Immutable/Constant JS-Object",
+  "main": "lib/constant.js",
+  "scripts": {
+    "test": "tap tests --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bloomberg/constant.js"
+  },
+  "keywords": [
+    "Immutable",
+    "Mini"
+  ],
+  "author": "Philipp Dunkel <pdunkel1@bloomberg.net>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "tap": "^10.5.2"
+  }
+}

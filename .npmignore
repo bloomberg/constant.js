@@ -1,0 +1,6 @@
+bundle.json
+deployment.json
+.travis.yml
+coverage/
+.vscode
+.nyc_output
