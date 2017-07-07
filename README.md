@@ -406,6 +406,20 @@ Works just like `Date.prototype.setUTCSeconds` except that rather than modifying
 
 Works just like `Date.prototype.setYear` except that rather than modifying the date, it returns a new constant date with the change applied.
 
+## Map Methods
+
+### `constantMap.set(key, val)`
+
+Works just like `Map.prototype.set` except it returns a contant Map instance that is the altered map.
+
+### `constantMap.delete(key)`
+
+Works just like `Map.prototype.delete` except it returns a constant Map instance that is the altered map.
+
+### `constantMap.clear()`
+
+Works just like `Map.prototype.clear` except it returns a constant Map instance that is empty.
+
 ## Custom Object Types
 
 Some object types require more information to properly handle. This can be done by placing a property on the prototype.
