@@ -23,6 +23,8 @@ last line of the commit message for each commit in your contribution:
 
     Signed-Off-By: Random J. Developer <random@developer.example.org>
 
+The simplest way to accomplish this is to add `-s` or `--signoff` to your `git commit` command.
+
 You must use your real name (sorry, no pseudonyms, and no anonymous contributions).
 
 ## Help / Documentation
