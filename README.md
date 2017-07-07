@@ -1,4 +1,4 @@
-# Constant.JS
+# Constant.JS [![Build Status](https://travis-ci.org/bloomberg/constant.js.svg?branch=master)](https://travis-ci.org/bloomberg/constant.js)
 
 A minimalistic javascript constant object library. It utilises `Object.freeze` to prevent
 mutations, however it does *deep-freeze* objects making them truly constant.
