@@ -9,6 +9,9 @@ objects. Accessing properties can therefore be done in the standard JS way (`obj
 There are also convenience access methods and mutation methods supported making handling of
 constant object hierarchies easy.
 
+In general this library shares common tree branches in hierarchies. This goes so far as to return the
+same object from alteration methods that do not actually modify the object where this is easily detected.
+
 ## Installation
 
 ```shell
@@ -419,6 +422,23 @@ Works just like `Map.prototype.delete` except it returns a constant Map instance
 ### `constantMap.clear()`
 
 Works just like `Map.prototype.clear` except it returns a constant Map instance that is empty.
+
+## Set Methods
+### `constantSet.add(val)`
+
+Works just like `Set.prototype.add` except it returns a constant Map instance that is empty.
+
+### `constantSet.delete(val)`
+
+Works just like `Set.prototype.delete` except it returns a constant Map instance that is empty.
+
+### `constantSet.get(idx)`
+
+Gets the value of an element of a Set by its index. This utilizes the `@@iterator` so for large sets this will be expensive depending on the value of `idx`.
+
+### `constantSet.clear()`
+
+Works just like `Set.prototype.clear` except it returns a constant Map instance that is empty.
 
 ## Custom Object Types
 
