@@ -1,4 +1,4 @@
-# Constant.JS
+# Constant.JS [![Build Status](https://travis-ci.org/bloomberg/constant.js.svg?branch=master)](https://travis-ci.org/bloomberg/constant.js)
 
 A minimalistic javascript constant object library. It utilises `Object.freeze` to prevent
 mutations, however it does *deep-freeze* objects making them truly constant.
@@ -8,6 +8,9 @@ objects. Accessing properties can therefore be done in the standard JS way (`obj
 
 There are also convenience access methods and mutation methods supported making handling of
 constant object hierarchies easy.
+
+In general this library shares common tree branches in hierarchies. This goes so far as to return the
+same object from alteration methods that do not actually modify the object where this is easily detected.
 
 ## Installation
 
@@ -405,6 +408,37 @@ Works just like `Date.prototype.setUTCSeconds` except that rather than modifying
 ### `constantDate.setYear()`
 
 Works just like `Date.prototype.setYear` except that rather than modifying the date, it returns a new constant date with the change applied.
+
+## Map Methods
+
+### `constantMap.set(key, val)`
+
+Works just like `Map.prototype.set` except it returns a contant Map instance that is the altered map.
+
+### `constantMap.delete(key)`
+
+Works just like `Map.prototype.delete` except it returns a constant Map instance that is the altered map.
+
+### `constantMap.clear()`
+
+Works just like `Map.prototype.clear` except it returns a constant Map instance that is empty.
+
+## Set Methods
+### `constantSet.add(val)`
+
+Works just like `Set.prototype.add` except it returns a constant Map instance that is empty.
+
+### `constantSet.delete(val)`
+
+Works just like `Set.prototype.delete` except it returns a constant Map instance that is empty.
+
+### `constantSet.get(idx)`
+
+Gets the value of an element of a Set by its index. This utilizes the `@@iterator` so for large sets this will be expensive depending on the value of `idx`.
+
+### `constantSet.clear()`
+
+Works just like `Set.prototype.clear` except it returns a constant Map instance that is empty.
 
 ## Custom Object Types
 
