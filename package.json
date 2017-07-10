@@ -1,6 +1,6 @@
 {
   "name": "constant.js",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Immutable/Constant JS-Object",
   "main": "lib/constant.js",
   "scripts": {
