@@ -5,6 +5,7 @@
   "main": "lib/constant.js",
   "scripts": {
     "test": "tap tests --coverage"
+    "build": "tap tests --coverage"
   },
   "repository": {
     "type": "git",
