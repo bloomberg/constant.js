@@ -4,8 +4,8 @@
   "description": "Immutable/Constant JS-Object",
   "main": "lib/constant.js",
   "scripts": {
-    "test": "tap tests --coverage",
-    "build": "tap tests --coverage"
+    "test": "tap tests",
+    "coverage": "tap tests --coverage"
   },
   "repository": {
     "type": "git",
