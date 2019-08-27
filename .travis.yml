@@ -3,3 +3,7 @@ node_js:
   - "node"
   - "7"
   - "6"
+
+branches:
+  only:
+    - master
